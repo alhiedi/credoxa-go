@@ -1,0 +1,17 @@
+# RecoveryEscalationSeverityEnum
+
+## Enum
+
+
+* `INFO` (value: `"info"`)
+
+* `WARNING` (value: `"warning"`)
+
+* `CRITICAL` (value: `"critical"`)
+
+* `EMERGENCY` (value: `"emergency"`)
+
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

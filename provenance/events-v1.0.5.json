@@ -1,0 +1,56 @@
+{
+  "contract": {
+    "canonical_openapi_sha256": "f74286cfb6d8e09896c04d4478a53e45cdb6bb10944721186d26199200f2b695",
+    "excluded_paths": [
+      "/api/v1/operator/saas/internal/authoritative/auth/",
+      "/api/v1/operator/saas/internal/authoritative/billing/"
+    ],
+    "projected_openapi_sha256": "9b01ab4d555a19778e8ad5fa92c39c8ece6ae3b268912f2473e1a1f639d69b7b",
+    "projection_contract_sha256": "54e1843b645cbecd538a32dbb6a4b7371589799bbddbf9b598d52d28cf8387b1",
+    "pruned_openapi_sha256": "f6ba8c70486c5e0c6736769f845d7069844e1a1bfe55133a0c44cf76279a1960",
+    "pruned_schemas": [
+      "AuthoritativeIngestionError",
+      "AuthoritativeIngestionErrorResponse",
+      "AuthoritativeIngestionResult",
+      "AuthoritativeLifecycleEnvelopeRequest"
+    ],
+    "pruning_contract_sha256": "52e2500af32606e8b7f86600885084ae9abc60b8ca46907414ca0d7b4f561ac7"
+  },
+  "distribution": {
+    "direct_generated_sdk_development": false,
+    "license": "Apache-2.0",
+    "manual_copy_release_architecture": false,
+    "module": "github.com/alhiedi/credoxa-go/events",
+    "repository": "alhiedi/credoxa-go",
+    "role": "generated-distribution-mirror",
+    "tag": "events/v1.0.5",
+    "version": "1.0.5"
+  },
+  "generated_artifact": {
+    "authoritative_model_residue": 0,
+    "events_tree_sha256": "276d70d21c8c11cbe899a1701ed10dd2cf095243784aa684837ccaced1cc659b",
+    "internal_authoritative_operation_residue": 0,
+    "internal_authoritative_path_residue": 0,
+    "private_module_residue": 0
+  },
+  "policy": {
+    "combined_policy_sha256": "b89ef600f09e3e1a9815d71cad347c1b896510ad3aac1db6d9eb085aeae28216",
+    "composition_policy_sha256": "ab387e528259dde9d87e3661749dae0a3ad7b83e9f5ffeed3b00a66f7b35fcae",
+    "cross_repository_auth_policy_sha256": "6f5107df0d1f02d32a32d9433d26d42fd8c499f661a78ff698d497a62c6c755a",
+    "license_policy_sha256": "54fb6a4fe31813b992b1e65c581a90068b031dc2005d252af852fc187bb3efa2",
+    "provenance_placement_sha256": "6a51ff7f76e3a443d0a78359b054b7fbe214694263781a4b2c52fedfdb279f9a",
+    "repository_role_policy_sha256": "99bdd89c60b5a9c9b0c0d59c3c69b494492d305287a356fc74a404bf7a474c8a",
+    "version_policy_sha256": "f9997e0db78e53ea092f5e155a51f0c1b120d086b78a5e0a8ce57d1a5e10763d"
+  },
+  "private_source": {
+    "branch": "release/events-sdk-v1.0.0",
+    "commit": "e8cf145de1e1082ebf6d6cf04a595a1017351d3a",
+    "coordinated_sdk_version": "1.0.5",
+    "go_tag": "shared/sdks/events/go/v1.0.5",
+    "go_tag_object": "9c079bce16c3644d7fbfca8b36028fabaf201030",
+    "go_tree_sha256": "42c8c614edf02cecaf64274c9522cfc506dd5151df5b42026d4f3023634484d7",
+    "repository": "alhiedi/credoxa-cloud"
+  },
+  "schema": "credoxa-go-provenance/v1",
+  "service": "events"
+}

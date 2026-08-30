@@ -1,0 +1,19 @@
+# RegionalControlPlaneStateEnum
+
+## Enum
+
+
+* `ACTIVE` (value: `"active"`)
+
+* `SUSPECT` (value: `"suspect"`)
+
+* `UNREACHABLE` (value: `"unreachable"`)
+
+* `FENCED` (value: `"fenced"`)
+
+* `RETIRED` (value: `"retired"`)
+
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
