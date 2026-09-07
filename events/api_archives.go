@@ -257,7 +257,7 @@ func (a *ArchivesAPIService) ArchivesJobsCancelExecute(r ApiArchivesJobsCancelRe
 	}
 
 	localVarPath := localBasePath + "/api/v1/archives/jobs/{job_id}/cancel/"
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -281,7 +281,9 @@ func (a *ArchivesAPIService) ArchivesJobsCancelExecute(r ApiArchivesJobsCancelRe
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.archiveActionRequest
+	if r.archiveActionRequest != nil {
+		localVarPostBody = r.archiveActionRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -462,7 +464,7 @@ func (a *ArchivesAPIService) ArchivesJobsDownloadExecute(r ApiArchivesJobsDownlo
 	}
 
 	localVarPath := localBasePath + "/api/v1/archives/jobs/{job_id}/download/"
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -717,7 +719,7 @@ func (a *ArchivesAPIService) ArchivesJobsManifestRetrieveExecute(r ApiArchivesJo
 	}
 
 	localVarPath := localBasePath + "/api/v1/archives/jobs/{job_id}/manifest/"
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -815,7 +817,7 @@ func (a *ArchivesAPIService) ArchivesJobsRetrieveExecute(r ApiArchivesJobsRetrie
 	}
 
 	localVarPath := localBasePath + "/api/v1/archives/jobs/{job_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -919,7 +921,7 @@ func (a *ArchivesAPIService) ArchivesJobsRetryExecute(r ApiArchivesJobsRetryRequ
 	}
 
 	localVarPath := localBasePath + "/api/v1/archives/jobs/{job_id}/retry/"
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -943,7 +945,9 @@ func (a *ArchivesAPIService) ArchivesJobsRetryExecute(r ApiArchivesJobsRetryRequ
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.archiveActionRequest
+	if r.archiveActionRequest != nil {
+		localVarPostBody = r.archiveActionRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {

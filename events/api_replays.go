@@ -162,7 +162,7 @@ func (a *ReplaysAPIService) ReplaysCancelCreateExecute(r ApiReplaysCancelCreateR
 	}
 
 	localVarPath := localBasePath + "/api/v1/replays/{replay_id}/cancel/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -519,7 +519,7 @@ func (a *ReplaysAPIService) ReplaysPauseCreateExecute(r ApiReplaysPauseCreateReq
 	}
 
 	localVarPath := localBasePath + "/api/v1/replays/{replay_id}/pause/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -629,7 +629,7 @@ func (a *ReplaysAPIService) ReplaysResumeCreateExecute(r ApiReplaysResumeCreateR
 	}
 
 	localVarPath := localBasePath + "/api/v1/replays/{replay_id}/resume/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -741,7 +741,7 @@ func (a *ReplaysAPIService) ReplaysRetrieveExecute(r ApiReplaysRetrieveRequest) 
 	}
 
 	localVarPath := localBasePath + "/api/v1/replays/{replay_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -857,7 +857,7 @@ func (a *ReplaysAPIService) ReplaysRetryCreateExecute(r ApiReplaysRetryCreateReq
 	}
 
 	localVarPath := localBasePath + "/api/v1/replays/{replay_id}/retry/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -881,7 +881,9 @@ func (a *ReplaysAPIService) ReplaysRetryCreateExecute(r ApiReplaysRetryCreateReq
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.replayRetryRequest
+	if r.replayRetryRequest != nil {
+		localVarPostBody = r.replayRetryRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {

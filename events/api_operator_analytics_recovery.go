@@ -705,8 +705,8 @@ func (a *OperatorAnalyticsRecoveryAPIService) OperatorAnalyticsRepairActionExecu
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/repairs/{repair_id}/{action}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", url.PathEscape(parameterValueToString(r.action, "action")), -1)
-	localVarPath = strings.Replace(localVarPath, "{"+"repair_id"+"}", url.PathEscape(parameterValueToString(r.repairId, "repairId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.action, "action")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"repair_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.repairId, "repairId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}

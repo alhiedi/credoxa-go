@@ -133,8 +133,8 @@ func (a *OperatorAnalyticsAPIService) OperatorAnalyticsProjectionActionExecute(r
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/operator/projections/{projection_id}/{action}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", url.PathEscape(parameterValueToString(r.action, "action")), -1)
-	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.action, "action")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -243,7 +243,7 @@ func (a *OperatorAnalyticsAPIService) OperatorAnalyticsProjectionDetailExecute(r
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/operator/projections/{projection_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -489,7 +489,7 @@ func (a *OperatorAnalyticsAPIService) OperatorAnalyticsProjectionRuntimeExecute(
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/operator/projections/{projection_id}/runtime/"
-	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -614,7 +614,7 @@ func (a *OperatorAnalyticsAPIService) OperatorAnalyticsRuntimeCollectionExecute(
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/operator/runtime/{kind}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"kind"+"}", url.PathEscape(parameterValueToString(r.kind, "kind")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"kind"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.kind, "kind")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}

@@ -409,8 +409,8 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecycleDeadLettersActionCrea
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/dead-letters/{batch_id}/{candidate_id}/action/"
-	localVarPath = strings.Replace(localVarPath, "{"+"batch_id"+"}", url.PathEscape(parameterValueToString(r.batchId, "batchId")), -1)
-	localVarPath = strings.Replace(localVarPath, "{"+"candidate_id"+"}", url.PathEscape(parameterValueToString(r.candidateId, "candidateId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"batch_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.batchId, "batchId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"candidate_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.candidateId, "candidateId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -616,7 +616,7 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecycleExecutionsControlCrea
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/executions/{execution_id}/control/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -731,7 +731,7 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecycleExecutionsControlRetr
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/executions/{execution_id}/control/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -965,7 +965,7 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecycleExecutionsRetrieveExe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/executions/{execution_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1304,7 +1304,7 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecycleLegalHoldsReleaseCrea
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/legal-holds/{hold_id}/release/"
-	localVarPath = strings.Replace(localVarPath, "{"+"hold_id"+"}", url.PathEscape(parameterValueToString(r.holdId, "holdId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"hold_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.holdId, "holdId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1328,7 +1328,9 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecycleLegalHoldsReleaseCrea
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.legalHoldReleaseRequest
+	if r.legalHoldReleaseRequest != nil {
+		localVarPostBody = r.legalHoldReleaseRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -1416,7 +1418,7 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecycleLegalHoldsReleaseRetr
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/legal-holds/{hold_id}/release/"
-	localVarPath = strings.Replace(localVarPath, "{"+"hold_id"+"}", url.PathEscape(parameterValueToString(r.holdId, "holdId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"hold_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.holdId, "holdId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1526,7 +1528,7 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecycleLegalHoldsRetrieveExe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/legal-holds/{hold_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"hold_id"+"}", url.PathEscape(parameterValueToString(r.holdId, "holdId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"hold_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.holdId, "holdId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1742,7 +1744,7 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecyclePoliciesRetrieveExecu
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/policies/{policy_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", url.PathEscape(parameterValueToString(r.policyId, "policyId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.policyId, "policyId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -2091,7 +2093,7 @@ func (a *LifecycleOperatorAPIService) OperatorSaasLifecycleTombstonesRetrieveExe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/tombstones/{tombstone_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"tombstone_id"+"}", url.PathEscape(parameterValueToString(r.tombstoneId, "tombstoneId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"tombstone_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.tombstoneId, "tombstoneId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}

@@ -401,7 +401,7 @@ func (a *OperatorsAPIService) OperatorConsumerRuntimeHealthRetrieveExecute(r Api
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/consumers/{consumer_id}/runtime-health/"
-	localVarPath = strings.Replace(localVarPath, "{"+"consumer_id"+"}", url.PathEscape(parameterValueToString(r.consumerId, "consumerId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"consumer_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.consumerId, "consumerId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -644,7 +644,7 @@ func (a *OperatorsAPIService) OperatorConsumerRuntimeSnapshotRetrieveExecute(r A
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/consumers/{consumer_id}/runtime-snapshot/"
-	localVarPath = strings.Replace(localVarPath, "{"+"consumer_id"+"}", url.PathEscape(parameterValueToString(r.consumerId, "consumerId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"consumer_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.consumerId, "consumerId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -760,7 +760,7 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentAcknowledgeExecute(r ApiOpe
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/runtime-incidents/{incident_id}/acknowledge/"
-	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -784,7 +784,9 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentAcknowledgeExecute(r ApiOpe
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.operatorRuntimeIncidentActionRequestRequest
+	if r.operatorRuntimeIncidentActionRequestRequest != nil {
+		localVarPostBody = r.operatorRuntimeIncidentActionRequestRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -878,7 +880,7 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentNotificationReplayExecute(r
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/runtime-incident-notifications/{outbox_id}/replay/"
-	localVarPath = strings.Replace(localVarPath, "{"+"outbox_id"+"}", url.PathEscape(parameterValueToString(r.outboxId, "outboxId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"outbox_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.outboxId, "outboxId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -902,7 +904,9 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentNotificationReplayExecute(r
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.operatorRuntimeIncidentNotificationActionRequestRequest
+	if r.operatorRuntimeIncidentNotificationActionRequestRequest != nil {
+		localVarPostBody = r.operatorRuntimeIncidentNotificationActionRequestRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -990,7 +994,7 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentNotificationRetrieveExecute
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/runtime-incident-notifications/{outbox_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"outbox_id"+"}", url.PathEscape(parameterValueToString(r.outboxId, "outboxId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"outbox_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.outboxId, "outboxId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1106,7 +1110,7 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentNotificationRetryExecute(r 
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/runtime-incident-notifications/{outbox_id}/retry/"
-	localVarPath = strings.Replace(localVarPath, "{"+"outbox_id"+"}", url.PathEscape(parameterValueToString(r.outboxId, "outboxId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"outbox_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.outboxId, "outboxId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1130,7 +1134,9 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentNotificationRetryExecute(r 
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.operatorRuntimeIncidentNotificationActionRequestRequest
+	if r.operatorRuntimeIncidentNotificationActionRequestRequest != nil {
+		localVarPostBody = r.operatorRuntimeIncidentNotificationActionRequestRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -1631,7 +1637,7 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentOccurrenceListExecute(r Api
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/runtime-incidents/{incident_id}/occurrences/"
-	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1753,7 +1759,7 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentReopenExecute(r ApiOperator
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/runtime-incidents/{incident_id}/reopen/"
-	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1777,7 +1783,9 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentReopenExecute(r ApiOperator
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.operatorRuntimeIncidentActionRequestRequest
+	if r.operatorRuntimeIncidentActionRequestRequest != nil {
+		localVarPostBody = r.operatorRuntimeIncidentActionRequestRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -1871,7 +1879,7 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentResolveExecute(r ApiOperato
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/runtime-incidents/{incident_id}/resolve/"
-	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1895,7 +1903,9 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentResolveExecute(r ApiOperato
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.operatorRuntimeIncidentActionRequestRequest
+	if r.operatorRuntimeIncidentActionRequestRequest != nil {
+		localVarPostBody = r.operatorRuntimeIncidentActionRequestRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -1983,7 +1993,7 @@ func (a *OperatorsAPIService) OperatorRuntimeIncidentRetrieveExecute(r ApiOperat
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/runtime-incidents/{incident_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"incident_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.incidentId, "incidentId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}

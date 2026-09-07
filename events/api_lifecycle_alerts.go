@@ -124,7 +124,7 @@ func (a *LifecycleAlertsAPIService) OperatorSaasLifecycleAlertsActionCreateExecu
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/alerts/{alert_id}/action/"
-	localVarPath = strings.Replace(localVarPath, "{"+"alert_id"+"}", url.PathEscape(parameterValueToString(r.alertId, "alertId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"alert_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.alertId, "alertId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -239,7 +239,7 @@ func (a *LifecycleAlertsAPIService) OperatorSaasLifecycleAlertsActionRetrieveExe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/alerts/{alert_id}/action/"
-	localVarPath = strings.Replace(localVarPath, "{"+"alert_id"+"}", url.PathEscape(parameterValueToString(r.alertId, "alertId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"alert_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.alertId, "alertId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -482,7 +482,7 @@ func (a *LifecycleAlertsAPIService) OperatorSaasLifecycleAlertsRetrieveExecute(r
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/lifecycle/alerts/{alert_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"alert_id"+"}", url.PathEscape(parameterValueToString(r.alertId, "alertId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"alert_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.alertId, "alertId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}

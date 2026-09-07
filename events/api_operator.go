@@ -3109,7 +3109,7 @@ func (a *OperatorAPIService) OperatorSelfHealingEscalationsRetrieveExecute(r Api
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/self-healing/escalations/{escalation_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"escalation_id"+"}", url.PathEscape(parameterValueToString(r.escalationId, "escalationId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"escalation_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.escalationId, "escalationId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -3365,7 +3365,7 @@ func (a *OperatorAPIService) OperatorSelfHealingQuarantinesRetrieveExecute(r Api
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/self-healing/quarantines/{quarantine_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"quarantine_id"+"}", url.PathEscape(parameterValueToString(r.quarantineId, "quarantineId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"quarantine_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.quarantineId, "quarantineId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -3621,7 +3621,7 @@ func (a *OperatorAPIService) OperatorSelfHealingRecoveriesRetrieveExecute(r ApiO
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/self-healing/recoveries/{execution_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -3858,7 +3858,7 @@ func (a *OperatorAPIService) RegionalControlPlaneAuthorityProposalDetailExecute(
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/control-plane/proposals/{proposal_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"proposal_id"+"}", url.PathEscape(parameterValueToString(r.proposalId, "proposalId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"proposal_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.proposalId, "proposalId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -4099,7 +4099,7 @@ func (a *OperatorAPIService) RegionalControlPlaneAuthorityVoteExecute(r ApiRegio
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/control-plane/proposals/{proposal_id}/votes/"
-	localVarPath = strings.Replace(localVarPath, "{"+"proposal_id"+"}", url.PathEscape(parameterValueToString(r.proposalId, "proposalId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"proposal_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.proposalId, "proposalId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -4362,7 +4362,7 @@ func (a *OperatorAPIService) RegionalControlPlaneConvergenceLatestExecute(r ApiR
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/control-plane/convergence/{topology_id}/latest/"
-	localVarPath = strings.Replace(localVarPath, "{"+"topology_id"+"}", url.PathEscape(parameterValueToString(r.topologyId, "topologyId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"topology_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.topologyId, "topologyId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -4482,7 +4482,7 @@ func (a *OperatorAPIService) RegionalControlPlaneDivergenceResolveExecute(r ApiR
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/control-plane/divergences/{divergence_id}/resolve/"
-	localVarPath = strings.Replace(localVarPath, "{"+"divergence_id"+"}", url.PathEscape(parameterValueToString(r.divergenceId, "divergenceId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"divergence_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.divergenceId, "divergenceId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -5319,7 +5319,7 @@ func (a *OperatorAPIService) RegionalDrComplianceDetailExecute(r ApiRegionalDrCo
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/disaster-recovery/compliance/{report_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"report_id"+"}", url.PathEscape(parameterValueToString(r.reportId, "reportId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"report_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.reportId, "reportId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -5541,7 +5541,7 @@ func (a *OperatorAPIService) RegionalDrDrillCancelExecute(r ApiRegionalDrDrillCa
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/disaster-recovery/drills/{drill_id}/cancel/"
-	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", url.PathEscape(parameterValueToString(r.drillId, "drillId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.drillId, "drillId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -5565,7 +5565,9 @@ func (a *OperatorAPIService) RegionalDrDrillCancelExecute(r ApiRegionalDrDrillCa
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.drillCancelRequest
+	if r.drillCancelRequest != nil {
+		localVarPostBody = r.drillCancelRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -5801,7 +5803,7 @@ func (a *OperatorAPIService) RegionalDrDrillDetailExecute(r ApiRegionalDrDrillDe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/disaster-recovery/drills/{drill_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", url.PathEscape(parameterValueToString(r.drillId, "drillId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.drillId, "drillId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -5911,7 +5913,7 @@ func (a *OperatorAPIService) RegionalDrDrillDispatchExecute(r ApiRegionalDrDrill
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/disaster-recovery/drills/{drill_id}/dispatch/"
-	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", url.PathEscape(parameterValueToString(r.drillId, "drillId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.drillId, "drillId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -6244,7 +6246,7 @@ func (a *OperatorAPIService) RegionalDrObjectiveDetailExecute(r ApiRegionalDrObj
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/disaster-recovery/objectives/{objective_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"objective_id"+"}", url.PathEscape(parameterValueToString(r.objectiveId, "objectiveId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"objective_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.objectiveId, "objectiveId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -6587,7 +6589,7 @@ func (a *OperatorAPIService) RegionalFailoverExecutionDetailExecute(r ApiRegiona
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/failover-executions/{execution_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -6697,7 +6699,7 @@ func (a *OperatorAPIService) RegionalFailoverExecutionDispatchExecute(r ApiRegio
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/failover-executions/{execution_id}/dispatch/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -6967,7 +6969,7 @@ func (a *OperatorAPIService) RegionalFailoverExecutionRetryExecute(r ApiRegional
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/failover-executions/{execution_id}/retry/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -7120,7 +7122,7 @@ func (a *OperatorAPIService) RegionalFailoverExecutionVerifyExecute(r ApiRegiona
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/failover-executions/{execution_id}/verify/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -7144,7 +7146,9 @@ func (a *OperatorAPIService) RegionalFailoverExecutionVerifyExecute(r ApiRegiona
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.regionalFailoverVerificationRequestRequest
+	if r.regionalFailoverVerificationRequestRequest != nil {
+		localVarPostBody = r.regionalFailoverVerificationRequestRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -7248,7 +7252,7 @@ func (a *OperatorAPIService) RegionalFailoverReconciliationApproveExecute(r ApiR
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/failover-reconciliations/{plan_id}/approve/"
-	localVarPath = strings.Replace(localVarPath, "{"+"plan_id"+"}", url.PathEscape(parameterValueToString(r.planId, "planId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"plan_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.planId, "planId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -7379,7 +7383,7 @@ func (a *OperatorAPIService) RegionalFailoverReconciliationExecuteExecute(r ApiR
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/failover-reconciliations/{plan_id}/execute/"
-	localVarPath = strings.Replace(localVarPath, "{"+"plan_id"+"}", url.PathEscape(parameterValueToString(r.planId, "planId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"plan_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.planId, "planId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -7403,7 +7407,9 @@ func (a *OperatorAPIService) RegionalFailoverReconciliationExecuteExecute(r ApiR
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.regionalFailoverReconciliationExecuteRequest
+	if r.regionalFailoverReconciliationExecuteRequest != nil {
+		localVarPostBody = r.regionalFailoverReconciliationExecuteRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -7491,7 +7497,7 @@ func (a *OperatorAPIService) RegionalFailoverReconciliationPlanDetailExecute(r A
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/failover-reconciliations/{plan_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"plan_id"+"}", url.PathEscape(parameterValueToString(r.planId, "planId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"plan_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.planId, "planId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -7731,7 +7737,7 @@ func (a *OperatorAPIService) RegionalFailoverSafetyDecisionApproveExecute(r ApiR
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/safety-decisions/{decision_id}/approve/"
-	localVarPath = strings.Replace(localVarPath, "{"+"decision_id"+"}", url.PathEscape(parameterValueToString(r.decisionId, "decisionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"decision_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.decisionId, "decisionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -7852,7 +7858,7 @@ func (a *OperatorAPIService) RegionalFailoverSafetyDecisionCancelExecute(r ApiRe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/safety-decisions/{decision_id}/cancel/"
-	localVarPath = strings.Replace(localVarPath, "{"+"decision_id"+"}", url.PathEscape(parameterValueToString(r.decisionId, "decisionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"decision_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.decisionId, "decisionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -7967,7 +7973,7 @@ func (a *OperatorAPIService) RegionalFailoverSafetyDecisionDetailExecute(r ApiRe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/safety-decisions/{decision_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"decision_id"+"}", url.PathEscape(parameterValueToString(r.decisionId, "decisionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"decision_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.decisionId, "decisionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -8216,7 +8222,7 @@ func (a *OperatorAPIService) RegionalFailoverSafetyDecisionRejectExecute(r ApiRe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/safety-decisions/{decision_id}/reject/"
-	localVarPath = strings.Replace(localVarPath, "{"+"decision_id"+"}", url.PathEscape(parameterValueToString(r.decisionId, "decisionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"decision_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.decisionId, "decisionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -8331,7 +8337,7 @@ func (a *OperatorAPIService) RegionalFailoverVerificationDetailExecute(r ApiRegi
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/failover-verifications/{verification_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"verification_id"+"}", url.PathEscape(parameterValueToString(r.verificationId, "verificationId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"verification_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.verificationId, "verificationId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -8688,7 +8694,7 @@ func (a *OperatorAPIService) RegionalObservationHistoryExecute(r ApiRegionalObse
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/regions/{region_id}/observations/"
-	localVarPath = strings.Replace(localVarPath, "{"+"region_id"+"}", url.PathEscape(parameterValueToString(r.regionId, "regionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"region_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.regionId, "regionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -8801,7 +8807,7 @@ func (a *OperatorAPIService) RegionalOperatorDrComplianceDetailExecute(r ApiRegi
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/control-plane/disaster-recovery/compliance/{report_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"report_id"+"}", url.PathEscape(parameterValueToString(r.reportId, "reportId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"report_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.reportId, "reportId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -9023,7 +9029,7 @@ func (a *OperatorAPIService) RegionalOperatorDrDrillCancelExecute(r ApiRegionalO
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/control-plane/disaster-recovery/drills/{drill_id}/cancel/"
-	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", url.PathEscape(parameterValueToString(r.drillId, "drillId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.drillId, "drillId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -9047,7 +9053,9 @@ func (a *OperatorAPIService) RegionalOperatorDrDrillCancelExecute(r ApiRegionalO
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.drillCancelRequest
+	if r.drillCancelRequest != nil {
+		localVarPostBody = r.drillCancelRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -9283,7 +9291,7 @@ func (a *OperatorAPIService) RegionalOperatorDrDrillDetailExecute(r ApiRegionalO
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/control-plane/disaster-recovery/drills/{drill_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", url.PathEscape(parameterValueToString(r.drillId, "drillId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.drillId, "drillId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -9393,7 +9401,7 @@ func (a *OperatorAPIService) RegionalOperatorDrDrillDispatchExecute(r ApiRegiona
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/control-plane/disaster-recovery/drills/{drill_id}/dispatch/"
-	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", url.PathEscape(parameterValueToString(r.drillId, "drillId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"drill_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.drillId, "drillId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -9726,7 +9734,7 @@ func (a *OperatorAPIService) RegionalOperatorDrObjectiveDetailExecute(r ApiRegio
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/control-plane/disaster-recovery/objectives/{objective_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"objective_id"+"}", url.PathEscape(parameterValueToString(r.objectiveId, "objectiveId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"objective_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.objectiveId, "objectiveId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -10059,7 +10067,7 @@ func (a *OperatorAPIService) RegionalReadinessHistoryExecute(r ApiRegionalReadin
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/regions/{region_id}/history/"
-	localVarPath = strings.Replace(localVarPath, "{"+"region_id"+"}", url.PathEscape(parameterValueToString(r.regionId, "regionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"region_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.regionId, "regionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -10169,7 +10177,7 @@ func (a *OperatorAPIService) RegionalReadinessLatestExecute(r ApiRegionalReadine
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/regions/{region_id}/latest/"
-	localVarPath = strings.Replace(localVarPath, "{"+"region_id"+"}", url.PathEscape(parameterValueToString(r.regionId, "regionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"region_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.regionId, "regionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -10504,7 +10512,7 @@ func (a *OperatorAPIService) RegionalTopologyReadinessLatestExecute(r ApiRegiona
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/regional-resilience/topologies/{topology_id}/latest/"
-	localVarPath = strings.Replace(localVarPath, "{"+"topology_id"+"}", url.PathEscape(parameterValueToString(r.topologyId, "topologyId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"topology_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.topologyId, "topologyId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -10749,8 +10757,8 @@ func (a *OperatorAPIService) SaasAnalyticsCheckpointRecoveryActionExecute(r ApiS
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/checkpoints/{checkpoint_id}/{action}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", url.PathEscape(parameterValueToString(r.action, "action")), -1)
-	localVarPath = strings.Replace(localVarPath, "{"+"checkpoint_id"+"}", url.PathEscape(parameterValueToString(r.checkpointId, "checkpointId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.action, "action")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"checkpoint_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.checkpointId, "checkpointId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -10914,7 +10922,7 @@ func (a *OperatorAPIService) SaasAnalyticsEventDeadLetterPreviewExecute(r ApiSaa
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/dead-letters/events/{analytics_event_id}/preview/"
-	localVarPath = strings.Replace(localVarPath, "{"+"analytics_event_id"+"}", url.PathEscape(parameterValueToString(r.analyticsEventId, "analyticsEventId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"analytics_event_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.analyticsEventId, "analyticsEventId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -10938,7 +10946,9 @@ func (a *OperatorAPIService) SaasAnalyticsEventDeadLetterPreviewExecute(r ApiSaa
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.analyticsEventDeadLetterPreviewRequestRequest
+	if r.analyticsEventDeadLetterPreviewRequestRequest != nil {
+		localVarPostBody = r.analyticsEventDeadLetterPreviewRequestRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -11042,7 +11052,7 @@ func (a *OperatorAPIService) SaasAnalyticsEventDeadLetterReplayExecute(r ApiSaas
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/dead-letters/events/{analytics_event_id}/replay/"
-	localVarPath = strings.Replace(localVarPath, "{"+"analytics_event_id"+"}", url.PathEscape(parameterValueToString(r.analyticsEventId, "analyticsEventId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"analytics_event_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.analyticsEventId, "analyticsEventId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -11198,8 +11208,8 @@ func (a *OperatorAPIService) SaasAnalyticsLeaseRecoveryActionExecute(r ApiSaasAn
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/leases/{lease_id}/{action}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", url.PathEscape(parameterValueToString(r.action, "action")), -1)
-	localVarPath = strings.Replace(localVarPath, "{"+"lease_id"+"}", url.PathEscape(parameterValueToString(r.leaseId, "leaseId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.action, "action")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"lease_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.leaseId, "leaseId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -11366,8 +11376,8 @@ func (a *OperatorAPIService) SaasAnalyticsRebuildActionExecute(r ApiSaasAnalytic
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/rebuilds/{job_id}/{action}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", url.PathEscape(parameterValueToString(r.action, "action")), -1)
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.action, "action")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -11534,8 +11544,8 @@ func (a *OperatorAPIService) SaasAnalyticsRebuildPreviewExecute(r ApiSaasAnalyti
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/rebuilds/{job_id}/preview/{action}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", url.PathEscape(parameterValueToString(r.action, "action")), -1)
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"action"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.action, "action")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -11677,7 +11687,7 @@ func (a *OperatorAPIService) SaasAnalyticsRebuildProgressRepairExecute(r ApiSaas
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/rebuilds/{job_id}/repair-progress/"
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -11990,7 +12000,7 @@ func (a *OperatorAPIService) SaasAnalyticsRepairDeadLetterPreviewExecute(r ApiSa
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/dead-letters/repairs/{repair_id}/preview/"
-	localVarPath = strings.Replace(localVarPath, "{"+"repair_id"+"}", url.PathEscape(parameterValueToString(r.repairId, "repairId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"repair_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.repairId, "repairId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -12132,7 +12142,7 @@ func (a *OperatorAPIService) SaasAnalyticsRepairDeadLetterReplayExecute(r ApiSaa
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/recovery/dead-letters/repairs/{repair_id}/replay/"
-	localVarPath = strings.Replace(localVarPath, "{"+"repair_id"+"}", url.PathEscape(parameterValueToString(r.repairId, "repairId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"repair_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.repairId, "repairId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -12566,7 +12576,7 @@ func (a *OperatorAPIService) SaasDegradedModeOverrideDetailExecute(r ApiSaasDegr
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/degraded-mode/overrides/{override_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"override_id"+"}", url.PathEscape(parameterValueToString(r.overrideId, "overrideId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"override_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.overrideId, "overrideId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -12807,7 +12817,7 @@ func (a *OperatorAPIService) SaasDegradedModeOverrideRevokeExecute(r ApiSaasDegr
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/degraded-mode/overrides/{override_id}/revoke/"
-	localVarPath = strings.Replace(localVarPath, "{"+"override_id"+"}", url.PathEscape(parameterValueToString(r.overrideId, "overrideId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"override_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.overrideId, "overrideId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -13605,7 +13615,7 @@ func (a *OperatorAPIService) SaasRuntimeGovernanceOverrideDetailExecute(r ApiSaa
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/runtime-governance/overrides/{override_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"override_id"+"}", url.PathEscape(parameterValueToString(r.overrideId, "overrideId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"override_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.overrideId, "overrideId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -13846,7 +13856,7 @@ func (a *OperatorAPIService) SaasRuntimeGovernanceOverrideRevokeExecute(r ApiSaa
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/runtime-governance/overrides/{override_id}/revoke/"
-	localVarPath = strings.Replace(localVarPath, "{"+"override_id"+"}", url.PathEscape(parameterValueToString(r.overrideId, "overrideId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"override_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.overrideId, "overrideId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -14105,7 +14115,7 @@ func (a *OperatorAPIService) SelfHealingConsumerQuarantineReleaseExecute(r ApiSe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/self-healing/quarantines/{quarantine_id}/release/"
-	localVarPath = strings.Replace(localVarPath, "{"+"quarantine_id"+"}", url.PathEscape(parameterValueToString(r.quarantineId, "quarantineId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"quarantine_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.quarantineId, "quarantineId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -14540,7 +14550,7 @@ func (a *OperatorAPIService) SelfHealingRecoveryEscalationAcknowledgeExecute(r A
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/self-healing/escalations/{escalation_id}/acknowledge/"
-	localVarPath = strings.Replace(localVarPath, "{"+"escalation_id"+"}", url.PathEscape(parameterValueToString(r.escalationId, "escalationId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"escalation_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.escalationId, "escalationId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -14661,7 +14671,7 @@ func (a *OperatorAPIService) SelfHealingRecoveryEscalationResolveExecute(r ApiSe
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/self-healing/escalations/{escalation_id}/resolve/"
-	localVarPath = strings.Replace(localVarPath, "{"+"escalation_id"+"}", url.PathEscape(parameterValueToString(r.escalationId, "escalationId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"escalation_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.escalationId, "escalationId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -14782,7 +14792,7 @@ func (a *OperatorAPIService) SelfHealingRecoveryExecutionCancelExecute(r ApiSelf
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/self-healing/recoveries/{execution_id}/cancel/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -14903,7 +14913,7 @@ func (a *OperatorAPIService) SelfHealingRecoveryExecutionRetryExecute(r ApiSelfH
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/self-healing/recoveries/{execution_id}/retry/"
-	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", url.PathEscape(parameterValueToString(r.executionId, "executionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"execution_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.executionId, "executionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}

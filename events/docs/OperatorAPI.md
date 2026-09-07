@@ -5773,6 +5773,8 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
+
+
 ## SaasDegradedModeEvaluate
 
 > DegradedModeEvaluationResponse SaasDegradedModeEvaluate(ctx).DegradedModeEvaluationRequestRequest(degradedModeEvaluationRequestRequest).Execute()

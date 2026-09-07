@@ -280,7 +280,7 @@ func (a *OperatorConsoleAPIService) OperatorArchivesCancelExecute(r ApiOperatorA
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/archives/{job_id}/cancel/"
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -304,7 +304,9 @@ func (a *OperatorConsoleAPIService) OperatorArchivesCancelExecute(r ApiOperatorA
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.operatorArchiveActionRequest
+	if r.operatorArchiveActionRequest != nil {
+		localVarPostBody = r.operatorArchiveActionRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -394,7 +396,7 @@ func (a *OperatorConsoleAPIService) OperatorArchivesRetrieveExecute(r ApiOperato
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/archives/{job_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -512,7 +514,7 @@ func (a *OperatorConsoleAPIService) OperatorArchivesRetryExecute(r ApiOperatorAr
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/archives/{job_id}/retry/"
-	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", url.PathEscape(parameterValueToString(r.jobId, "jobId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"job_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.jobId, "jobId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -536,7 +538,9 @@ func (a *OperatorConsoleAPIService) OperatorArchivesRetryExecute(r ApiOperatorAr
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.operatorArchiveActionRequest
+	if r.operatorArchiveActionRequest != nil {
+		localVarPostBody = r.operatorArchiveActionRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -851,7 +855,7 @@ func (a *OperatorConsoleAPIService) OperatorConsumersRetrieveExecute(r ApiOperat
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/consumers/{consumer_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"consumer_id"+"}", url.PathEscape(parameterValueToString(r.consumerId, "consumerId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"consumer_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.consumerId, "consumerId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1413,7 +1417,7 @@ func (a *OperatorConsoleAPIService) OperatorReplaysCancelExecute(r ApiOperatorRe
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/replays/{replay_id}/cancel/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1525,7 +1529,7 @@ func (a *OperatorConsoleAPIService) OperatorReplaysPauseExecute(r ApiOperatorRep
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/replays/{replay_id}/pause/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1637,7 +1641,7 @@ func (a *OperatorConsoleAPIService) OperatorReplaysResumeExecute(r ApiOperatorRe
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/replays/{replay_id}/resume/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1749,7 +1753,7 @@ func (a *OperatorConsoleAPIService) OperatorReplaysRetrieveExecute(r ApiOperator
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/replays/{replay_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1867,7 +1871,7 @@ func (a *OperatorConsoleAPIService) OperatorReplaysRetryExecute(r ApiOperatorRep
 	}
 
 	localVarPath := localBasePath + "/api/operators/v1/replays/{replay_id}/retry/"
-	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", url.PathEscape(parameterValueToString(r.replayId, "replayId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"replay_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.replayId, "replayId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -1891,7 +1895,9 @@ func (a *OperatorConsoleAPIService) OperatorReplaysRetryExecute(r ApiOperatorRep
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.replayRetryRequest
+	if r.replayRetryRequest != nil {
+		localVarPostBody = r.replayRetryRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {

@@ -119,7 +119,7 @@ func (a *TenantAnalyticsAPIService) TenantAnalyticsProjectionDetailExecute(r Api
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/projections/{projection_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -369,7 +369,7 @@ func (a *TenantAnalyticsAPIService) TenantAnalyticsProjectionReadinessExecute(r 
 	}
 
 	localVarPath := localBasePath + "/api/v1/operator/saas/analytics/projections/{projection_id}/readiness/"
-	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"projection_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.projectionId, "projectionId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}

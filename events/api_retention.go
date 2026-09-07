@@ -268,7 +268,7 @@ func (a *RetentionAPIService) RetentionPoliciesDestroyExecute(r ApiRetentionPoli
 	}
 
 	localVarPath := localBasePath + "/api/v1/retention/policies/{policy_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", url.PathEscape(parameterValueToString(r.policyId, "policyId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.policyId, "policyId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -481,7 +481,7 @@ func (a *RetentionAPIService) RetentionPoliciesPartialUpdateExecute(r ApiRetenti
 	}
 
 	localVarPath := localBasePath + "/api/v1/retention/policies/{policy_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", url.PathEscape(parameterValueToString(r.policyId, "policyId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.policyId, "policyId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -505,7 +505,9 @@ func (a *RetentionAPIService) RetentionPoliciesPartialUpdateExecute(r ApiRetenti
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
 	// body params
-	localVarPostBody = r.patchedRetentionPolicyWriteRequest
+	if r.patchedRetentionPolicyWriteRequest != nil {
+		localVarPostBody = r.patchedRetentionPolicyWriteRequest
+	}
 	if r.ctx != nil {
 		// API Key Authentication
 		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
@@ -593,7 +595,7 @@ func (a *RetentionAPIService) RetentionPoliciesRetrieveExecute(r ApiRetentionPol
 	}
 
 	localVarPath := localBasePath + "/api/v1/retention/policies/{policy_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", url.PathEscape(parameterValueToString(r.policyId, "policyId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.policyId, "policyId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
@@ -709,7 +711,7 @@ func (a *RetentionAPIService) RetentionPoliciesUpdateExecute(r ApiRetentionPolic
 	}
 
 	localVarPath := localBasePath + "/api/v1/retention/policies/{policy_id}/"
-	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", url.PathEscape(parameterValueToString(r.policyId, "policyId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"policy_id"+"}", strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(url.PathEscape(parameterValueToString(r.policyId, "policyId")), ":", "%3A"), "@", "%40"), "$", "%24"), "&", "%26"), "+", "%2B"), "=", "%3D"), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
